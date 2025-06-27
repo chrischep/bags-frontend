@@ -1,32 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #F4E7E1;
+  color: #333;
 }
-.bag-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.bag-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: 200px;
-}
-.bag-card img {
-  width: 100%;
-}
-.app-main {
-  min-height: 80vh;
-  padding: 20px;
-}
+
 /* Navbar Styles */
-.app-navbar {
+.custom-style  .app-navbar {
   background-color: #521C0D;
   padding: 10px 20px;
 }
 
-.nav-links {
+.custom-style  .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -34,28 +23,40 @@ body {
   padding: 0;
 }
 
-.nav-link {
+.custom-style  .nav-link {
   color: #F4E7E1;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-link:hover {
+.custom-style  .nav-link:hover {
   color: #FF9B45;
 }
 
-/* Footer Styles */
-.app-footer {
-  background-color: #521C0D;
-  color: #F4E7E1;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 40px;
+.custom-style  .bag-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.cart-page {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #ccc;
+
+.custom-style  .bag-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.custom-style  .bag-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.custom-style  .bag-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
 }
